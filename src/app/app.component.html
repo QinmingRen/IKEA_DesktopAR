@@ -1,0 +1,16 @@
+<div id="mainpage" *ngIf="!showConfig && !showAR">
+    <img id="logo" src="assets/imgs/logo.jpg" />
+    <h1>Choose Page</h1>
+    <div id="CameraSelector">
+      <h4>Choose Camera:  </h4>
+      <select [(ngModel)]="selectedDev">
+        <option *ngFor="let dev of deviceInfos; index as i" [value]="dev.deviceId">Camera {{i}}</option>
+      </select>
+    </div>
+    <div id="content">
+        <button (click)="on_ARClicked();"><h2>AR</h2></button>
+        <button (click)="on_ConfigClicked();"><h2>Config</h2></button>
+    </div>
+</div>
+<config-page [deviceid] ="selectedDev" *ngIf="showConfig"></config-page>
+<ar-page [deviceid] ="selectedDev" *ngIf="showAR"></ar-page>

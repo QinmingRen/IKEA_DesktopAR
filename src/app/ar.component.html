@@ -1,0 +1,109 @@
+<div id="main_canvas_container">
+</div>
+<video hidden id="ar_canvas" width=640 height=480></video>
+<div class="anchor" id="zoneWidth" [hidden]="sceneRegionVisible == false">{{sceneWidth}}m</div>
+<div class="anchor" id="zoneHeight" [hidden]="sceneRegionVisible == false">{{sceneHeight}}m</div>
+
+<img id="logo" src="assets/imgs/logo.jpg" />
+<img id="btnRoom" src="assets/imgs/roomstate.png" (click)="on_ShowRoomOptions()" />
+<img id="btnProfile" src="assets/imgs/palette.png" (click)="on_ShowProfileTool()" />
+<img id="btnSurvey" src="assets/imgs/survey.png" (click)="on_ShowSurvey()" />
+<div class="panel" id="btnQuote" (click)="on_ShowQuotation()">
+  清单: ¥ {{totalPrice}}
+</div>
+<div *ngIf="showTooltip" class="tooltip panel" id="change_tip"><h3>点击更换其它功能性柜体</h3></div>
+<div *ngIf="selected_obj != null" id="price_anchor" (click)="on_ShowMaterialTool()">
+  <img class="small_thumbnail" src="assets/thumbs/{{selected_obj.mecode}}.png" />
+  <span>
+    {{selected_obj.cname}} <br />
+    价格: ¥{{selected_obj.price}}
+  </span>
+</div>
+<div *ngIf="showRoomOpt" class="panel shadow" id="room_option">
+  <h2>
+    Room Options
+  </h2>
+  <div>
+    Width (mm):
+    <input type="text" name="width" [(ngModel)]="zoneWidth" placeholder="width">
+    Depth (mm):
+    <input type="text" name="depth" [(ngModel)]="zoneDepth" placeholder="depth">
+    <br />
+    <input type="checkbox" name="calib" (click)="on_CalibMode();" />Calibration Mode<br />
+  </div>
+  <div>
+    <h4>Floor Texture</h4>
+    <ul class="align_row">
+      <li *ngFor="let f of floors">
+        <div class="thumb_item" (click)="on_FloorClick(f);">
+          <img class="thumbnail center-block tapable" src="assets/assets/floor/{{f.thumb}}" />
+        </div>
+      </li>
+    </ul>
+  </div>
+  <a class="button" (click)="on_RoomOK()">OK</a>
+</div>
+<div *ngIf="showProfile" class="panel shadow" id="profile">
+  <h2>
+    更换门板
+  </h2>
+  <div id="profile_list">
+    <ul class="align_row">
+      <li class="center_text thumb_item" *ngFor="let pro of color_profiles">
+        <div class="thumbnail" (click)="on_ProfileChanged(pro)">
+          <img class="profile_thumb" src="assets/thumbs/{{pro.thumb}}" />
+        </div>
+        <br />
+        {{pro.cname}}
+      </li>
+    </ul>
+  </div>
+</div>
+<div *ngIf="showCandidatesTool" id="model_list">
+  <ul class="align_row">
+    <li *ngFor="let m of modelCandidates">
+      <div class="thumb_item" (click)="on_ChangeTo(m)">
+        <img class="thumbnail center-block tapable" src="assets/thumbs/{{m}}.png" />
+      </div>
+    </li>
+  </ul>
+</div>
+<div *ngIf="showQuotation" class="panel shadow" id="quotation">
+  <h2>
+    产品清单
+  </h2>
+  <div id="price">
+    <h3 class="align_left">台面长度: {{totalLength}}m</h3> &nbsp;&nbsp;&nbsp;&nbsp;
+    <h3 class="align_left">台面价: ¥ {{topPrice}}</h3> &nbsp;&nbsp;&nbsp;&nbsp;
+    <h3 class="align_left">安装价: ¥ {{installPrice}}</h3>&nbsp;&nbsp;&nbsp;&nbsp;
+    <h3 class="align_left">总价: ¥ {{totalPrice}}</h3>
+    <button (click)="on_Print();">Print</button>
+  </div>
+  <div id="price_detail">
+    <ul>
+      <li *ngFor="let m of visibleModelsArray">
+        <h4>{{m.cname}} (¥{{m.price}})</h4>
+        <img class="thumbnail center-block quat_thumb" src="assets/thumbs/{{m.mecode}}.png" />
+        <table border="0">
+          <tr>
+            <th>编号</th>
+            <th>名称</th>
+            <th>单价</th>
+            <th>数量</th>
+            <th>合计</th>
+          </tr>
+          <tr *ngFor="let item of m.components[currentProfile]">
+            <td style="width:100px;">{{item.articalNo}}</td>
+            <td style="width:200px;">{{item.name}}</td>
+            <td style="width:80px;">¥{{item.price_local}}</td>
+            <td style="width:80px;text-align:center;">{{item.quantity}}</td>
+            <td style="width:80px;">¥{{item.price_local * item.quantity}}</td>
+          </tr>
+        </table>
+      </li>
+    </ul>
+  </div>
+</div>
+<div *ngIf="showSurvey" class="panel shadow" style="left:400px; top:10px; width:58%; height:90%;">
+  <iframe [src]="surveyUrl" style="width:100%; height:100%;"></iframe>
+</div>

@@ -1,0 +1,45 @@
+<button (click)="on_AddNew()">Add New</button>
+<button (click)="on_Save()">Save</button>
+<p>
+    <input type="text" id="source" [(ngModel)]="excelString">
+</p>
+<div id="content">
+    <table>
+        <tr>
+            <th>Base</th>   
+            <th>1</th> 
+            <th>2</th> 
+            <th>3</th> 
+            <th>4</th> 
+            <th>5</th> 
+            <th>6</th> 
+            <th>7</th> 
+            <th>8</th> 
+            <th>9</th> 
+            <th>10</th> 
+            <th>11</th> 
+            <th>12</th>
+        </tr>
+        <tr *ngFor="let row of Profiles">
+            <!--ngFor似乎在绑定数组上有Bug，如果在row上用ngFor，比如
+                <td *ngFor="let col of row; index as i">
+                    <input [(ngModel)]="row[i]" >
+                </td>
+                会导致input框在输入一个数字后失去焦点，并跳到另一个框上，发生混乱
+            -->
+            <td><input [(ngModel)]="row[0]" ></td>
+            <td><input [(ngModel)]="row[1]" ></td>
+            <td><input [(ngModel)]="row[2]" ></td>
+            <td><input [(ngModel)]="row[3]" ></td>
+            <td><input [(ngModel)]="row[4]" ></td>
+            <td><input [(ngModel)]="row[5]" ></td>
+            <td><input [(ngModel)]="row[6]" ></td>
+            <td><input [(ngModel)]="row[7]" ></td>
+            <td><input [(ngModel)]="row[8]" ></td>
+            <td><input [(ngModel)]="row[9]" ></td>
+            <td><input [(ngModel)]="row[10]" ></td>
+            <td><input [(ngModel)]="row[11]" ></td>
+            <td><input [(ngModel)]="row[12]" ></td>
+        </tr>
+    </table>
+</div>

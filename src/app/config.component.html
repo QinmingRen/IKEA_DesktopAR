@@ -1,0 +1,63 @@
+<h1>Config Page</h1>
+<div id="container">
+    <button (click)="showProfilePage = false; showItemPage = false; selectedModel = null;">Model List</button>
+    <button (click)="showProfilePage = true;  showItemPage = false;">Profile Table</button>
+    <profile-page *ngIf="showProfilePage"></profile-page>
+    <itemprofile-page *ngIf="showItemPage && selectedModel != null" [item]="selectedModel"></itemprofile-page>
+    <button (click)="on_AddNew()">Add New</button>
+    <button (click)="on_Accept()">Save</button>
+    Additional Price Info:<input type="file" ng2FileSelect [uploader]="uploader" (change)="on_selectedFileChanged($event)" />
+</div>
+<div id="marker_identifier" *ngIf="showIdentifier">
+    <div id="background"></div>
+    <div id="rec_panel">
+        <video hidden id="ar_canvas" width=640 height=480></video>
+        <div id="container">
+            <img *ngIf="temp_marker_id != -1" class="largemarker" src="assets/js/martrixcode/{{temp_marker_id}}.png" />
+            <h1 *ngIf="temp_marker_id == -1">Recognizing...</h1>
+            <h1 *ngIf="temp_marker_id != -1"> Marker ID: {{temp_marker_id}}</h1>
+        </div>
+        <div>
+            <span>Rotation(degree): </span>
+            <input type="radio" name="rotation" id='deg0' (click)="on_set_degree();">0
+            <input type="radio" name="rotation" id='deg1' (click)="on_set_degree();">90
+            <input type="radio" name="rotation" id='deg2' (click)="on_set_degree();">180
+            <input type="radio" name="rotation" id='deg3' (click)="on_set_degree();">270
+            <br />
+            <button (click)="on_SaveMarkerID();">OK</button>
+            <button (click)="on_CancelMarkerID();">Cancel</button>        
+        </div>
+    </div>
+</div>
+<div *ngIf="!showProfilePage && !showItemPage" id="content">
+    <table>
+        <tr>
+            <th (click)="on_Sort('mecode');">ME Code</th>
+            <th>Model Name</th>
+            <th>Item No(s)</th>
+            <th>Thumb</th>
+            <th>Size_W</th>
+            <th (click)="on_Sort('group');">Group_ID</th>
+            <th (click)="on_Sort('marker');">Marker ID</th>
+            <th (click)="on_Sort('marker');">Marker Thumb</th>
+            <th>Tools</th>
+        </tr>
+        <tr *ngFor="let item of models">
+            <td><input type="text" [(ngModel)]="item.mecode"></td>
+            <td><input type="text" [(ngModel)]="item.model_name"></td>
+            <td>{{item.itemNos | join}}</td>
+            <td><img class="marker" src="assets/thumbs/{{item.mecode}}.png" /></td>
+            <td><input type="text" [(ngModel)]="item.size_w"></td>
+            <td><input type="text" [(ngModel)]="item.size_h"></td>
+            <td><input type="text" [(ngModel)]="item.marker_id"></td>
+            <td><img class="marker" src="assets/js/martrixcode/{{item.marker_id}}.png" (click)="on_ShowIdentifier(item);" /></td>
+            <td>
+                <button (click)="on_EditItem(item)">Edit Profile</button>
+                <button (click)="on_Copy(item)">Copy</button>
+                <br/>
+                <button (click)="on_CheckPrice(item)">Check Price</button>
+                <!--button (click)="on_Remove(item)">Remove</button -->
+            </td>
+        </tr>
+    </table>
+</div>

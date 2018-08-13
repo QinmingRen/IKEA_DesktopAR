@@ -1,0 +1,772 @@
+{
+    "RetailItemComm": {
+        "ItemNo": {
+            "$": -1
+        },
+        "ItemNoGlobal": {
+            "$": 20184041
+        },
+        "ItemType": {
+            "$": "ART"
+        },
+        "ProductName": {
+            "$": "MÅLA莫拉"
+        },
+        "ProductTypeName": {
+            "$": "毡头笔"
+        },
+        "ValidDesignText": {
+            "$": "多色"
+        },
+        "OnlineSellable": {
+            "$": false
+        },
+        "BreathTakingItem": {
+            "$": false
+        },
+        "ItemUnitCode": {
+            "$": "PIECES"
+        },
+        "ItemNumberOfPackages": {
+            "$": 1
+        },
+        "AssemblyCode": {
+            "$": "N"
+        },
+        "DesignerNameComm": {
+            "$": "S Fager/C Tubertini"
+        },
+        "PriceUnitTextMetric": {
+            "$": "件"
+        },
+        "ItemPriceUnitFactorMetric": {
+            "$": 12
+        },
+        "ItemPriceUnitFactorImperial": {
+            "$": 12
+        },
+        "GlobalisationContext": {
+            "LanguageCodeIso": {
+                "$": "zh"
+            },
+            "CountryCodeIso": {
+                "$": "cn"
+            }
+        },
+        "ClassUnitKey": {
+            "ClassType": {
+                "$": "GR"
+            },
+            "ClassUnitType": {
+                "$": "RU"
+            },
+            "ClassUnitCode": {
+                "$": "CN"
+            }
+        },
+        "RetailItemCommPriceList": {
+            "RetailItemCommPrice": {
+                "RetailPriceType": {
+                    "$": "RegularSalesUnitPrice"
+                },
+                "Price": {
+                    "$": 0
+                },
+                "PriceExclTax": {
+                    "$": 17.01
+                },
+                "ComparableUnitPrice": {
+                    "UnitPriceMetric": {
+                        "$": 1.66
+                    },
+                    "UnitPriceMetricExclTax": {
+                        "$": 1.42
+                    },
+                    "UnitPriceImperial": {
+                        "$": 1.66
+                    },
+                    "UnitPriceImperialExclTax": {
+                        "$": 1.42
+                    }
+                },
+                "CurrencyCode": {
+                    "$": "CNY"
+                }
+            }
+        },
+        "RetailItemImageList": {
+            "RetailItemImage": [
+                {
+                    "ImageUsage": {
+                        "$": "INTERNET"
+                    },
+                    "ImageSize": {
+                        "$": "S1"
+                    },
+                    "ImageUrl": {
+                        "$": "/PIAimages/0526545_PE645053_S1.JPG"
+                    },
+                    "ImageWidth": {
+                        "$": 40
+                    },
+                    "ImageHeight": {
+                        "$": 40
+                    },
+                    "SortNo": {
+                        "$": 1
+                    },
+                    "ImageType": {
+                        "$": "PICTURE SINGLE"
+                    }
+                },
+                {
+                    "ImageUsage": {
+                        "$": "INTERNET"
+                    },
+                    "ImageSize": {
+                        "$": "S2"
+                    },
+                    "ImageUrl": {
+                        "$": "/PIAimages/0526545_PE645053_S2.JPG"
+                    },
+                    "ImageWidth": {
+                        "$": 110
+                    },
+                    "ImageHeight": {
+                        "$": 110
+                    },
+                    "SortNo": {
+                        "$": 1
+                    },
+                    "ImageType": {
+                        "$": "PICTURE SINGLE"
+                    }
+                },
+                {
+                    "ImageUsage": {
+                        "$": "INTERNET"
+                    },
+                    "ImageSize": {
+                        "$": "S3"
+                    },
+                    "ImageUrl": {
+                        "$": "/PIAimages/0526545_PE645053_S3.JPG"
+                    },
+                    "ImageWidth": {
+                        "$": 250
+                    },
+                    "ImageHeight": {
+                        "$": 250
+                    },
+                    "SortNo": {
+                        "$": 1
+                    },
+                    "ImageType": {
+                        "$": "PICTURE SINGLE"
+                    }
+                },
+                {
+                    "ImageUsage": {
+                        "$": "INTERNET"
+                    },
+                    "ImageSize": {
+                        "$": "S4"
+                    },
+                    "ImageUrl": {
+                        "$": "/cn/zh/images/products/mala-mo-la-zhan-tou-bi-duo-se__0526545_PE645053_S4.JPG"
+                    },
+                    "ImageWidth": {
+                        "$": 500
+                    },
+                    "ImageHeight": {
+                        "$": 500
+                    },
+                    "SortNo": {
+                        "$": 1
+                    },
+                    "ImageType": {
+                        "$": "PICTURE SINGLE"
+                    }
+                },
+                {
+                    "ImageUsage": {
+                        "$": "INTERNET"
+                    },
+                    "ImageSize": {
+                        "$": "S5"
+                    },
+                    "ImageUrl": {
+                        "$": "/PIAimages/0526545_PE645053_S5.JPG"
+                    },
+                    "ImageWidth": {
+                        "$": 2000
+                    },
+                    "ImageHeight": {
+                        "$": 2000
+                    },
+                    "SortNo": {
+                        "$": 1
+                    },
+                    "ImageType": {
+                        "$": "PICTURE SINGLE"
+                    }
+                },
+                {
+                    "ImageUsage": {
+                        "$": "INTERNET"
+                    },
+                    "ImageSize": {
+                        "$": "S3"
+                    },
+                    "ImageUrl": {
+                        "$": "/PIAimages/0468090_PE611164_S3.JPG"
+                    },
+                    "ImageWidth": {
+                        "$": 250
+                    },
+                    "ImageHeight": {
+                        "$": 250
+                    },
+                    "SortNo": {
+                        "$": 2
+                    },
+                    "ImageType": {
+                        "$": "PICTURE SINGLE"
+                    }
+                },
+                {
+                    "ImageUsage": {
+                        "$": "INTERNET"
+                    },
+                    "ImageSize": {
+                        "$": "S4"
+                    },
+                    "ImageUrl": {
+                        "$": "/cn/zh/images/products/mala-mo-la-zhan-tou-bi-duo-se__0468090_PE611164_S4.JPG"
+                    },
+                    "ImageWidth": {
+                        "$": 500
+                    },
+                    "ImageHeight": {
+                        "$": 500
+                    },
+                    "SortNo": {
+                        "$": 2
+                    },
+                    "ImageType": {
+                        "$": "PICTURE SINGLE"
+                    }
+                },
+                {
+                    "ImageUsage": {
+                        "$": "INTERNET"
+                    },
+                    "ImageSize": {
+                        "$": "S5"
+                    },
+                    "ImageUrl": {
+                        "$": "/PIAimages/0468090_PE611164_S5.JPG"
+                    },
+                    "ImageWidth": {
+                        "$": 2000
+                    },
+                    "ImageHeight": {
+                        "$": 2000
+                    },
+                    "SortNo": {
+                        "$": 2
+                    },
+                    "ImageType": {
+                        "$": "PICTURE SINGLE"
+                    }
+                },
+                {
+                    "ImageUsage": {
+                        "$": "INTERNET"
+                    },
+                    "ImageSize": {
+                        "$": "S3"
+                    },
+                    "ImageUrl": {
+                        "$": "/PIAimages/0184717_PE336382_S3.JPG"
+                    },
+                    "ImageWidth": {
+                        "$": 250
+                    },
+                    "ImageHeight": {
+                        "$": 250
+                    },
+                    "SortNo": {
+                        "$": 3
+                    },
+                    "ImageType": {
+                        "$": "PICTURE SINGLE"
+                    }
+                },
+                {
+                    "ImageUsage": {
+                        "$": "INTERNET"
+                    },
+                    "ImageSize": {
+                        "$": "S4"
+                    },
+                    "ImageUrl": {
+                        "$": "/cn/zh/images/products/mala-mo-la-zhan-tou-bi-duo-se__0184717_PE336382_S4.JPG"
+                    },
+                    "ImageWidth": {
+                        "$": 500
+                    },
+                    "ImageHeight": {
+                        "$": 500
+                    },
+                    "SortNo": {
+                        "$": 3
+                    },
+                    "ImageType": {
+                        "$": "PICTURE SINGLE"
+                    }
+                },
+                {
+                    "ImageUsage": {
+                        "$": "INTERNET"
+                    },
+                    "ImageSize": {
+                        "$": "S5"
+                    },
+                    "ImageUrl": {
+                        "$": "/PIAimages/0184717_PE336382_S5.JPG"
+                    },
+                    "ImageWidth": {
+                        "$": 2000
+                    },
+                    "ImageHeight": {
+                        "$": 2000
+                    },
+                    "SortNo": {
+                        "$": 3
+                    },
+                    "ImageType": {
+                        "$": "PICTURE SINGLE"
+                    }
+                }
+            ]
+        },
+        "GPRCommSelectionCriteriaSelectionList": {
+            "GPRCommSelectionCriteriaSelection": [
+                {
+                    "SelectionCriteriaCode": {
+                        "$": "COLOUR"
+                    },
+                    "SelectionCriteriaName": {
+                        "$": "颜色"
+                    },
+                    "SelectionCriteriaValue": {
+                        "$": "多色"
+                    }
+                },
+                {
+                    "SelectionCriteriaCode": {
+                        "$": "SIZE"
+                    },
+                    "SelectionCriteriaName": {
+                        "$": "尺寸"
+                    },
+                    "SelectionCriteriaValue": {
+                        "$": "-"
+                    }
+                }
+            ]
+        },
+        "AttributeGroupList": {
+            "AttributeGroup": {
+                "GroupName": {
+                    "$": "SEO"
+                },
+                "AttributeList": {
+                    "Attribute": {
+                        "Name": {
+                            "$": "DESCRIPTION"
+                        },
+                        "Value": {
+                            "$": "IKEA - MÅLA莫拉, 毡头笔 , 毡头笔就算忘记盖回笔套，笔头在3天内也不会干掉。但为了保持毡头笔的良好性能，请用完后马上将笔套盖回。MÅLA 莫拉 系列的所有产品都安全无毒——我们和您一样关心下一代创新人才。毡头笔易于抓握，笔迹清晰，颜色鲜艳。毡头笔在大多数表面和材料上画出的痕迹均可用肥皂和温水去除。请注意，即时清洁是关键。"
+                        }
+                    }
+                }
+            }
+        },
+        "RetailItemCustomerBenefitList": {
+            "RetailItemCustomerBenefit": [
+                {
+                    "CustomerBenefitText": {
+                        "$": "毡头笔就算忘记盖回笔套，笔头在3天内也不会干掉。但为了保持毡头笔的良好性能，请用完后马上将笔套盖回。"
+                    },
+                    "SortNo": {
+                        "$": 1
+                    }
+                },
+                {
+                    "CustomerBenefitText": {
+                        "$": "MÅLA 莫拉 系列的所有产品都安全无毒——我们和您一样关心下一代创新人才。"
+                    },
+                    "SortNo": {
+                        "$": 2
+                    }
+                },
+                {
+                    "CustomerBenefitText": {
+                        "$": "毡头笔易于抓握，笔迹清晰，颜色鲜艳。"
+                    },
+                    "SortNo": {
+                        "$": 3
+                    }
+                },
+                {
+                    "CustomerBenefitText": {
+                        "$": "毡头笔在大多数表面和材料上画出的痕迹均可用肥皂和温水去除。请注意，即时清洁是关键。"
+                    },
+                    "SortNo": {
+                        "$": 4
+                    }
+                }
+            ]
+        },
+        "RetailItemGoodToKnowList": {
+            "RetailItemGoodToKnow": [
+                {
+                    "GoodToKnowTypeNameEn": {
+                        "$": "Warning"
+                    },
+                    "GoodToKnowText": {
+                        "$": "警告：存在窒息危险——小部件可能导致窒息。三岁以下的孩子不宜使用。"
+                    },
+                    "SortNo": {
+                        "$": 1
+                    }
+                },
+                {
+                    "GoodToKnowTypeNameEn": {
+                        "$": "Included"
+                    },
+                    "GoodToKnowText": {
+                        "$": "含12支不同颜色的毡头笔。"
+                    },
+                    "SortNo": {
+                        "$": 2
+                    }
+                },
+                {
+                    "GoodToKnowTypeNameEn": {
+                        "$": "Age recommendations"
+                    },
+                    "GoodToKnowText": {
+                        "$": "适于3岁以上的孩子。"
+                    },
+                    "SortNo": {
+                        "$": 3
+                    }
+                },
+                {
+                    "GoodToKnowTypeNameEn": {
+                        "$": "Purchase information"
+                    },
+                    "GoodToKnowText": {
+                        "$": "使用寿命两年，生产日期见外包装。"
+                    },
+                    "SortNo": {
+                        "$": 4
+                    }
+                }
+            ]
+        },
+        "RetailItemCustomerMaterialList": {
+            "RetailItemCustomerMaterial": {
+                "SortNo": {
+                    "$": 1
+                },
+                "RetailItemPartMaterialList": {
+                    "RetailItemPartMaterial": [
+                        {
+                            "PartText": {
+                                "$": "塑料件:"
+                            },
+                            "MaterialText": {
+                                "$": "聚丙烯塑料, 贴膜"
+                            },
+                            "SortNo": {
+                                "$": 1
+                            }
+                        },
+                        {
+                            "PartText": {
+                                "$": "笔尖/ 颜料管:"
+                            },
+                            "MaterialText": {
+                                "$": "100%聚酯纤维"
+                            },
+                            "SortNo": {
+                                "$": 2
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "RetailItemCommPackageMeasureList": {
+            "RetailItemCommPackageMeasure": [
+                {
+                    "PackageMeasureType": {
+                        "$": "WIDTH"
+                    },
+                    "PackageMeasureTextMetric": {
+                        "$": "15 厘米"
+                    },
+                    "PackageMeasureTextImperial": {
+                        "$": "6 英寸"
+                    },
+                    "SortNo": {
+                        "$": 1
+                    },
+                    "ConsumerPackNumber": {
+                        "$": 1
+                    }
+                },
+                {
+                    "PackageMeasureType": {
+                        "$": "HEIGHT"
+                    },
+                    "PackageMeasureTextMetric": {
+                        "$": "1 厘米"
+                    },
+                    "PackageMeasureTextImperial": {
+                        "$": "½ 英寸"
+                    },
+                    "SortNo": {
+                        "$": 1
+                    },
+                    "ConsumerPackNumber": {
+                        "$": 1
+                    }
+                },
+                {
+                    "PackageMeasureType": {
+                        "$": "LENGTH"
+                    },
+                    "PackageMeasureTextMetric": {
+                        "$": "17 厘米"
+                    },
+                    "PackageMeasureTextImperial": {
+                        "$": "6 ¾ 英寸"
+                    },
+                    "SortNo": {
+                        "$": 1
+                    },
+                    "ConsumerPackNumber": {
+                        "$": 1
+                    }
+                },
+                {
+                    "PackageMeasureType": {
+                        "$": "WEIGHT"
+                    },
+                    "PackageMeasureTextMetric": {
+                        "$": "0.12 公斤"
+                    },
+                    "PackageMeasureTextImperial": {
+                        "$": "4 盎司"
+                    },
+                    "SortNo": {
+                        "$": 1
+                    },
+                    "ConsumerPackNumber": {
+                        "$": 1
+                    }
+                }
+            ]
+        },
+        "RetailItemCommMeasureList": {
+            "RetailItemCommMeasure": {
+                "ItemMeasureTypeName": {
+                    "$": "包装数量"
+                },
+                "ItemMeasureTextMetric": {
+                    "$": "12 件"
+                },
+                "ItemMeasureTextImperial": {
+                    "$": "12 件"
+                },
+                "SortNo": {
+                    "$": 1
+                }
+            }
+        },
+        "DemandList": {
+            "Demand": {
+                "$": "Chemical product"
+            }
+        },
+        "CatalogRefList": {
+            "CatalogRef": [
+                {
+                    "Catalog": {
+                        "CatalogId": {
+                            "$": "genericproducts"
+                        },
+                        "CatalogName": {
+                            "$": "产品类别"
+                        },
+                        "CatalogUrl": {
+                            "$": "/retail/iows/cn/zh/catalog/genericproducts"
+                        }
+                    },
+                    "CatalogElementList": {
+                        "CatalogElement": {
+                            "CatalogElementId": {
+                                "$": 23664
+                            },
+                            "CatalogElementType": {
+                                "$": "GENERIC PRODUCT"
+                            },
+                            "CatalogElementName": {
+                                "$": "莫拉"
+                            },
+                            "CatalogElementUrl": {
+                                "$": "/retail/iows/cn/zh/catalog/genericproducts/23664"
+                            }
+                        }
+                    }
+                },
+                {
+                    "Catalog": {
+                        "CatalogId": {
+                            "$": "series"
+                        },
+                        "CatalogName": {
+                            "$": "系列"
+                        },
+                        "CatalogUrl": {
+                            "$": "/retail/iows/cn/zh/catalog/series"
+                        }
+                    },
+                    "CatalogElementList": {
+                        "CatalogElement": {
+                            "CatalogElementId": {
+                                "$": 11671
+                            },
+                            "CatalogElementType": {
+                                "$": "TOP CATEGORY"
+                            },
+                            "CatalogElementName": {
+                                "$": "\"莫拉\"系列"
+                            },
+                            "CatalogElementUrl": {
+                                "$": "/retail/iows/cn/zh/catalog/series/11671"
+                            }
+                        }
+                    }
+                },
+                {
+                    "Catalog": {
+                        "CatalogId": {
+                            "$": "departments"
+                        },
+                        "CatalogName": {
+                            "$": "部门"
+                        },
+                        "CatalogUrl": {
+                            "$": "/retail/iows/cn/zh/catalog/departments"
+                        }
+                    },
+                    "CatalogElementList": {
+                        "CatalogElement": {
+                            "CatalogElementId": {
+                                "$": 18735
+                            },
+                            "CatalogElementType": {
+                                "$": "CHAPTER"
+                            },
+                            "CatalogElementName": {
+                                "$": "手工艺品"
+                            },
+                            "CatalogElementUrl": {
+                                "$": "/retail/iows/cn/zh/catalog/departments/childrens_ikea/18735"
+                            }
+                        }
+                    }
+                },
+                {
+                    "Catalog": {
+                        "CatalogId": {
+                            "$": "functional"
+                        },
+                        "CatalogName": {
+                            "$": "功能"
+                        },
+                        "CatalogUrl": {
+                            "$": "/retail/iows/cn/zh/catalog/functional"
+                        }
+                    },
+                    "CatalogElementList": {
+                        "CatalogElement": {
+                            "CatalogElementId": {
+                                "$": 18735
+                            },
+                            "CatalogElementType": {
+                                "$": "CHAPTER"
+                            },
+                            "CatalogElementName": {
+                                "$": "手工艺品"
+                            },
+                            "CatalogElementUrl": {
+                                "$": "/retail/iows/cn/zh/catalog/functional/18681/18735"
+                            }
+                        }
+                    }
+                },
+                {
+                    "Catalog": {
+                        "CatalogId": {
+                            "$": "seasonal"
+                        },
+                        "CatalogName": {
+                            "$": "季节"
+                        },
+                        "CatalogUrl": {
+                            "$": "/retail/iows/cn/zh/catalog/seasonal"
+                        }
+                    },
+                    "CatalogElementList": {
+                        "CatalogElement": {
+                            "CatalogElementId": {
+                                "$": 18735
+                            },
+                            "CatalogElementType": {
+                                "$": "CHAPTER"
+                            },
+                            "CatalogElementName": {
+                                "$": "手工艺品"
+                            },
+                            "CatalogElementUrl": {
+                                "$": "/retail/iows/cn/zh/catalog/seasonal/winter_holidays/18735"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "PriceUnitTextMetricEn": {
+            "$": "pack"
+        },
+        "PriceUnitTextImperialEn": {
+            "$": "pack"
+        },
+        "UnitPriceGroupCode": {
+            "$": "MULTIPACK"
+        },
+        "RetailItemCustomerBenefitSummaryText": {
+            "$": "在孩子有了灵感时，MÅLA 莫拉 系列可以提供他们需要的一切工具。尽情画吧！裁剪！绘画！重要的是享受欢乐时光，让孩子发挥想象力，探索这个世界，尽情放飞自己！"
+        },
+        "@xmlns": {
+            "$": "ikea.com/cem/iows/RetailItemCommunicationService/2.0/"
+        }
+    }
+}

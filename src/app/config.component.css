@@ -1,0 +1,137 @@
+h1 {
+    text-align: center;
+}
+
+ul{
+    list-style-type:none;
+}
+
+input{
+    border: 0px solid black;
+    width: 60px;
+    background-color: transparent;
+    text-align: center;
+}
+
+button{
+  margin: 5px;
+}
+
+input[type=radio]{
+    width:20px;
+}
+
+#itemno{
+    width:150px;
+}
+
+img.marker{
+    width:80px; 
+}
+
+img.largemarker{
+    width:120px;
+}
+
+div#marker_identifier
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+div#background{
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.7;
+}
+
+div#rec_panel{
+    position: absolute;
+    display: block;
+    left:30%;
+    top:10%;
+    width:40%;
+    height:50%;
+    background: white;
+    border-radius: 8px;
+}
+
+div#container{
+    min-width: 240px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+div.modelitem{
+    width: 100%;
+    height: 100%;
+    margin: 20px 30px 20px 30px;
+    padding: 20px 60px 20px 60px;
+    background-color: steelblue;
+    border-radius: 16px;
+    box-shadow: 0px 0px 15px black;
+    border: 1px solid black;
+}
+
+div.modelitem#addnew{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 3em;
+}
+
+div.modelitem#addnew h1{
+    color: white;
+}
+
+li{
+    width: 430px;
+    display: inline-flex;
+}
+
+#content{
+    width: 100%;
+    height: 80%;
+    overflow-y: auto;
+}
+
+table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;  
+    font-family: Futura, Arial, sans-serif;  
+}  
+ 
+caption {  
+    font-size: larger;  
+    margin: 1em auto;  
+}  
+ 
+th,td {  
+    padding: .65em;  
+}  
+ 
+th {  
+    background: #555 nonerepeat scroll 0 0;  
+    border: 1px solid #777;  
+    color: #fff;  
+    text-align: center;
+    cursor: pointer;
+}  
+ 
+td {  
+    border: 1px solid#777;  
+    text-align: center;
+}  
+
+tbody tr:nth-child(odd) {  
+    background: #ccc;  
+}  
+
+tbody tr:hover {  
+    background-color:#aaa;  
+}  

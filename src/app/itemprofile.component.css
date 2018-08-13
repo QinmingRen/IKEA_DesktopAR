@@ -1,0 +1,12 @@
+#content{
+    width: 100%;
+    height: 80%;
+    overflow-y: auto;
+}
+
+textarea{
+    width: 80%;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5em;
+}
